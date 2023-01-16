@@ -7,7 +7,7 @@ const Header = ({title, onAdd, showAdd}) => {
     //What does a className do? I think the classes are created in index.css and making this the className will get those features for the thing
     <header className='header '>
       <h2>{title}</h2>
-      <Button color={showAdd ? 'red' : 'green'} text= {showAdd ? 'Close' : 'Add'} onClick={onAdd}/>
+      <Button color={showAdd ? 'red' : 'green'} text= {showAdd ? 'Close' : 'Read more'} onClick={onAdd}/>
     </header >
   )
 }
@@ -19,11 +19,5 @@ Header.defaultProps = {
 Header.propTypes = {
   title: PropTypes.string.isRequired,
 }
-
-// //CSS in JS
-// const headingStyle = {
-//   color: 'red',
-//   backgroundColor: 'grey'
-// }
 
 export default Header

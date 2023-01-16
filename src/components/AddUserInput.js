@@ -7,7 +7,7 @@ const AddUserInput = ({onAdd}) => {
         e.preventDefault()
 
         if(!input){
-            alert('Please pick a User ID ranging between 1 - 10')
+            alert("Please Enter today's date")
             return
         }
 
@@ -15,13 +15,14 @@ const AddUserInput = ({onAdd}) => {
 
         setInput('')
     }
+
   return (
     <form className = 'add-form' onSubmit={onSubmit}>
         <div className = 'form-control'>
-            <label>Pick User ID ranging between 1 - 10</label>
-            <input type = 'text' placeholder = 'Enter User ID' value={input} onChange= {(e) => setInput(e.target.value)}/>
+            <label>Today's Date in IST</label>
+            <input type = 'text' placeholder = "Enter today's date in IST" value={input} onChange= {(e) => setInput(e.target.value)}/>
         </div>
-        <input type = 'submit' value = 'Query REST API' className = 'btn btn-block' />
+        <input type = 'submit' value = 'Print to Console' className = 'btn btn-block' />
     </form>
   )
 }
