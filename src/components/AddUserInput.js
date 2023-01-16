@@ -6,6 +6,7 @@ const AddUserInput = ({onAdd}) => {
     const onSubmit = (e) =>{
         e.preventDefault()
 
+        //user feedback in the case of bad input
         if(!input){
             alert("Please Enter today's date")
             return
