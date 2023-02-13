@@ -26,7 +26,7 @@ function App(){
 
   return (
     <div className="container">
-      <h1> AggieWorks Take Home Assignment!</h1>
+      <h1> Rest API!</h1>
       <Header onAdd = {() => setShowAddInput(!showAddInput)} showAdd ={showAddInput}/> {/*Header with the open and close button (uses useState) */}
       {showAddInput && <AddUserInput onAdd={addInput}/>} {/* If the AddInput is true then do this */}
       <button onClick={getAPI}> Today's Actual date in IST</button> {/*The button that queries the API */}
